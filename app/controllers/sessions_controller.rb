@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       flash[:success] = "You have successfully logged in!"
       redirect_to root_path
     else
-      flash.now[:error] = "Please check your credentails and retry!"
+      flash.now[:error] = "Please check your credentails and retry."
       render 'new'
     end
   end
